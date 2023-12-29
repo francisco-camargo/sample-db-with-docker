@@ -7,7 +7,6 @@ password = 'college'
 host = 'localhost'
 port = 3306
 database = 'employees'
-ssl_disabled = True
 
 
 def get_sqlalchemy_connection():
@@ -23,7 +22,6 @@ def get_mysql_connection():
         password=password,
         host=host,
         database=database,
-        ssl_disabled=ssl_disabled,
     )
     return connection
 
