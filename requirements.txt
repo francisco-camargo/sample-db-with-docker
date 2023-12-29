@@ -1,0 +1,6 @@
+black
+flake8
+pandas
+sqlalchemy
+pymysql
+mysql-connector-python
