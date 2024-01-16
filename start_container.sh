@@ -4,4 +4,3 @@ docker run -d \
   -e MYSQL_ROOT_PASSWORD=college \
   -v /${PWD}/data:/var/lib/mysql \
   genschsa/mysql-employees
-  
