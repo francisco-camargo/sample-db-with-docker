@@ -13,7 +13,13 @@ docker pull genschsa/mysql-employees
 
 It exposes port `3306` and supports a mountable volume at `/var/lib/mysql` for persistent data.
 
-With the Docker image on-hand, start a container with the script `start_container.sh`. Execute this script by running `./start_container.sh` in a terminal
+With the Docker image on-hand, start a container with the script `start_container.sh`. Execute this script by running
+
+```bash
+./start_container.sh
+```
+
+in the terminal
 
 If successfully running the container, you can execute a SQL query against the containerized database by running
 
@@ -21,7 +27,9 @@ If successfully running the container, you can execute a SQL query against the c
 python main.py
 ```
 
-which will print to the terminal five data entries.
+which will print to the terminal five data entries
+
+![1736965122651](image/README/1736965122651.png)
 
 ## Working on Windows
 
@@ -30,4 +38,3 @@ Following advise from [here](https://stackoverflow.com/questions/50608301/docker
 ## Port 3306 error
 
 If when you run `docker run` you get complaints about port 3306 already being in use, try [this](https://stackoverflow.com/questions/68065284/specified-port-3306-is-already-in-use-when-installing-mysql)
-
